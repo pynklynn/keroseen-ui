@@ -1,0 +1,3 @@
+@import '../../components/grid';
+
+@include keroseen-grid('keroseen-grid', (9, 12, 16), false);

@@ -1,0 +1,89 @@
+//
+// @author Will Steinmetz
+// @file _grid.scss
+// @licence MIT
+// This file defines the grids available in Keroseen.
+//
+
+@mixin keroseen-grid-generate-column($width, $i, $size) {
+  .col-#{$size}-#{$i} {
+    width: $width;
+  }
+}
+
+@mixin keroseen-grid-generate-column-set($grid, $size, $col-width) {
+  @for $i from 1 through $grid {
+    $width: $i * $col-width + $i - 1;
+
+    @include keroseen-grid-generate-column($width, $i, $size);
+  }
+}
+
+@mixin keroseen-grid($grid-class: 'keroseen-grid', $keroseen-grids: 12, $keroseen-grids-portrait-breaks: true) {
+  $keroseen-grid-breakpoints: sm 544px, md 768px, lg 992px, xl 1200px;
+
+  .#{$grid-class},
+  .#{$grid-class} .row {
+    @include clear-fix();
+  }
+
+  .#{$grid-class} {
+    .row.spacer {
+      margin-bottom: 1em;
+    }
+
+    .col-* {
+      box-sizing: border-box;
+      padding: 0 1%;
+      margin-left: 0.5%;
+      margin-right: 0.5%;
+      float: left;
+    }
+
+    @each $grid in $keroseen-grids {
+      &.grid-#{$grid} {
+        $col-width: 100% / $grid - 1;
+
+        @for $i from 1 through $grid - 1 {
+          $width: $i * $col-width + $i - 1;
+
+          // @TODO revisit if push and pull are backwards
+          .push-#{$i} {
+            margin-right: $width + 1.5;
+          }
+
+          .pull-#{$i} {
+            float: right;
+            margin-right: $width + 1.5;
+          }
+        }
+
+        @include keroseen-grid-generate-column-set($grid, xs, $col-width);
+
+        @each $size, $breakpoint in $keroseen-grid-breakpoints {
+          @media screen and (min-width: $breakpoint) {
+            @include keroseen-grid-generate-column-set($grid, $size, $col-width);
+          }
+
+          @if $keroseen-grids-portrait-breaks {
+            $portrait-breakpoint: $breakpoint * 9 / 16;
+
+            @media screen and (min-width: $portrait-breakpoint) and (orientation: portrait) {
+              @include keroseen-grid-generate-column-set($grid, $size, $col-width);
+            }
+          }
+        }
+      }
+    }
+
+    .centered {
+      float: none;
+      margin-left: auto;
+      margin-right: auto;
+
+      &:first-child {
+        margin-left: auto;
+      }
+    }
+  }
+}
