@@ -29,6 +29,7 @@
     "grunt-contrib-watch": "^1.0.0",
     "grunt-sass": "^2.0.0",
     "load-grunt-config": "^0.19.2",
+    "node-static": "^0.7.9",
     "time-grunt": "^1.4.0"
   }
 }

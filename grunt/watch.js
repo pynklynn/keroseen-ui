@@ -14,8 +14,20 @@ module.exports = {
       'src/demo/sass/**/*.scss'
     ],
     tasks: [
-      'clean:all',
+      'clean:css',
       'sass'
+    ],
+    options: {
+      spawn: false
+    }
+  },
+  html: {
+    files: [
+      'src/demo/pug/**/*.pug'
+    ],
+    tasks: [
+      'clean:html',
+      'pug'
     ],
     options: {
       spawn: false

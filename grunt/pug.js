@@ -13,6 +13,7 @@ module.exports = {
       pretty: true,
     },
     files: {
+      'demo/index.html': 'src/demo/pug/index.pug',
       'demo/grid.html': 'src/demo/pug/grid.pug'
     }
   }

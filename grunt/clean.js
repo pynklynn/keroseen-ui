@@ -10,5 +10,11 @@
 module.exports = {
   all: [
     'demo'
+  ],
+  css: [
+    'demo/**/*.css'
+  ],
+  html: [
+    'demo/**/*.html'
   ]
 };
