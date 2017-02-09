@@ -3,6 +3,85 @@ doctype html
 html
   head
     title Keroseen UI - grid demo
-    link(href="demo.css")
+    link(rel='stylesheet', href='./demo.css', media='screen')
+    style(type='text/css').
+      [class^="col-"] {
+        background-color: red;
+        border: solid 1px blue;
+      }
   body
     h1 Keroseen UI - grid demo
+
+    .keroseen-grid.grid-12
+      .row
+        .col-xs-1 .col-xs-1
+        .col-xs-11 .col-xs-11
+      .row
+        .col-xs-2 .col-xs-2
+        .col-xs-10 .col-xs-10
+      .row
+        .col-xs-3 .col-xs-3
+        .col-xs-9 .col-xs-9
+      .row
+        .col-xs-4 .col-xs-4
+        .col-xs-8 .col-xs-8
+      .row
+        .col-xs-5 .col-xs-5
+        .col-xs-7 .col-xs-7
+      .row
+        .col-xs-6 .col-xs-6
+        .col-xs-6 .col-xs-6
+      .row
+        .col-xs-12 .col-xs-12
+
+    p Offsets
+
+    .keroseen-grid.grid-12
+      .row
+        .col-xs-11.offset-xs-1 .col-xs-11.offset-xs-1
+      .row
+        .col-xs-10.offset-xs-2 .col-xs-10.offset-xs-2
+      .row
+        .col-xs-9.offset-xs-3 .col-xs-9.offset-xs-3
+      .row
+        .col-xs-8.offset-xs-4 .col-xs-8.offset-xs-4
+      .row
+        .col-xs-7.offset-xs-5 .col-xs-7.offset-xs-5
+      .row
+        .col-xs-6.offset-xs-6 .col-xs-6.offset-xs-6
+      .row
+        .col-xs-5.offset-xs-7 .col-xs-5.offset-xs-7
+      .row
+        .col-xs-4.offset-xs-8 .col-xs-4.offset-xs-8
+      .row
+        .col-xs-3.offset-xs-9 .col-xs-3.offset-xs-9
+      .row
+        .col-xs-2.offset-xs-10 .col-xs-2.offset-xs-10
+      .row
+        .col-xs-1.offset-xs-11 .col-xs-1.offset-xs-11
+
+    p Centered columns
+
+    .keroseen-grid.grid-12
+      .row
+        .col-xs-11.centered .col-xs-11.centered
+      .row
+        .col-xs-10.centered .col-xs-10.centered
+      .row
+        .col-xs-9.centered .col-xs-9.centered
+      .row
+        .col-xs-8.centered .col-xs-8.centered
+      .row
+        .col-xs-7.centered .col-xs-7.centered
+      .row
+        .col-xs-6.centered .col-xs-6.centered
+      .row
+        .col-xs-5.centered .col-xs-5.centered
+      .row
+        .col-xs-4.centered .col-xs-4.centered
+      .row
+        .col-xs-3.centered .col-xs-3.centered
+      .row
+        .col-xs-2.centered .col-xs-2.centered
+      .row
+        .col-xs-1.centered .col-xs-1.centered
