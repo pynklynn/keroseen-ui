@@ -1,0 +1,46 @@
+//
+// @author Will Steinmetz
+// @file _variables.scss
+// licence MIT
+// copyright: 2017
+// This file defines the base variables used in Keroseen.
+//
+
+///
+// Screen sizes
+///
+
+// base sizes
+$keroseen-screen-xs: 543px;
+$keroseen-screen-sm: 544px;
+$keroseen-screen-md: 768px;
+$keroseen-screen-lg: 992px;
+$keroseen-screen-xl: 1200px;
+
+// extra small
+$keroseen-screen-xs-min: 0;
+$keroseen-screen-xs-max: $keroseen-screen-xs;
+
+// small
+$keroseen-screen-sm-min: $keroseen-screen-sm;
+$keroseen-screen-sm-max: $keroseen-screen-md - 1;
+
+// medium
+$keroseen-screen-md-min: $keroseen-screen-md;
+$keroseen-screen-md-max: $keroseen-screen-lg - 1;
+
+// large
+$keroseen-screen-lg-min: $keroseen-screen-lg;
+$keroseen-screen-lg-max: $keroseen-screen-xl - 1;
+
+// extra large
+$keroseen-screen-xl-min: $keroseen-screen-xl;
+$keroseen-screen-xl-max: 100%;
+
+// breakpoint sets
+$keroseen-breakpoints: sm $keroseen-screen-sm, md $keroseen-screen-md, lg $keroseen-screen-lg, xl $keroseen-screen-xl;
+$keroseen-range-breakpoints: xs $keroseen-screen-xs-min $keroseen-screen-xs-max,
+  sm $keroseen-screen-sm-min $keroseen-screen-sm-max,
+  md $keroseen-screen-md-min $keroseen-screen-md-max,
+  lg $keroseen-screen-lg-min $keroseen-screen-lg-max,
+  xl $keroseen-screen-xl-min $keroseen-screen-xl-max;

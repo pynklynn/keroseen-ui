@@ -31,8 +31,6 @@
 }
 
 @mixin keroseen-grid($keroseen-grids: 12, $keroseen-grids-portrait-breaks: true) {
-  $keroseen-grid-breakpoints: sm 544px, md 768px, lg 992px, xl 1200px;
-
   &,
   .row {
     @include clear-fix();
@@ -54,7 +52,7 @@
 
       @include keroseen-grid-generate-column-set($grid, xs, $col-width);
 
-      @each $size, $breakpoint in $keroseen-grid-breakpoints {
+      @each $size, $breakpoint in $keroseen-breakpoints {
         @if $keroseen-grids-portrait-breaks {
           $portrait-breakpoint: $breakpoint * 9 / 16;
 

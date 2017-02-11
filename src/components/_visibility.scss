@@ -1,0 +1,61 @@
+//
+// @author Will Steinmetz
+// @file _visbility.scss
+// licence MIT
+// copyright: 2017
+// This file defines the visibility settings available in Keroseen.
+//
+
+@mixin keroseen-screen-reader-styles {
+  height: 1px;
+  left: -10000px;
+  overflow: hidden;
+  position: absolute;
+  top: auto;
+  width: 1px;
+}
+
+@mixin keroseen-screen-reader {
+  @each $size, $breakpoint-min, $breakpoint-max in $keroseen-range-breakpoints {
+    @media screen and (min-width: $breakpoint-min) and (max-width: $breakpoint-max) {
+      .screen-reader-#{$size}-only,
+      .sr-#{$size}-only {
+        @include keroseen-screen-reader-styles();
+      }
+    }
+  }
+}
+
+@mixin keroseen-visible {
+  $keroseen-display-types: inline, block, flex, inline-block, inline-flex, inline-table,
+    list-item, table-caption, table-column-group, table-header-group,
+    table-footer-group, table-row-group, table-cell, table-column, table-row;
+
+  [class^="visible-"] {
+    display: none;
+  }
+
+  @each $size, $breakpoint-min, $breakpoint-max in $keroseen-range-breakpoints {
+    @media screen and (min-width: $breakpoint-min) and (max-width: $breakpoint-max) {
+      .visible-#{$size} {
+        display: block;
+      }
+
+      @each $display-type in $keroseen-display-types {
+        .visible-#{$size}-#{$display-type} {
+          display: $display-type;
+        }
+      }
+    }
+  }
+}
+
+@mixin keroseen-hidden {
+  @each $size, $breakpoint-min, $breakpoint-max in $keroseen-range-breakpoints {
+    @media screen and (min-width: $breakpoint-min) and (max-width: $breakpoint-max) {
+      .hidden-#{$size} {
+        display: none;
+      }
+    }
+  }
+}

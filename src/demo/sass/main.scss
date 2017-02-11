@@ -1,2 +1,12 @@
+// import libraries
+@import '../../components/variables';
 @import '../../components/utilities';
+@import '../../components/visibility';
+
+// configured consumptions
 @import 'grid';
+
+// consumptions that don't require configuration
+@include keroseen-screen-reader();
+@include keroseen-visible();
+@include keroseen-hidden();
