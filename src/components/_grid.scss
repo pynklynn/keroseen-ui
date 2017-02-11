@@ -33,16 +33,17 @@
 @mixin keroseen-grid($keroseen-grids: 12, $keroseen-grids-portrait-breaks: true) {
   &,
   .row {
+    display: block;
     @include clear-fix();
   }
 
   .row.spacer {
-    margin-bottom: 1em;
+    margin-bottom: 1rem;
   }
 
   [class^="col-"] {
-    box-sizing: border-box;
-    padding: 0 10px;
+    display: block;
+    padding: 0 1rem;
     float: left;
   }
 

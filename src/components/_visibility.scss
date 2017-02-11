@@ -6,6 +6,7 @@
 // This file defines the visibility settings available in Keroseen.
 //
 
+// styles taken from http://webaim.org/techniques/css/invisiblecontent/
 @mixin keroseen-screen-reader-styles {
   height: 1px;
   left: -10000px;

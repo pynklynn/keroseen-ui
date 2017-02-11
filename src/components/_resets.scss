@@ -1,0 +1,20 @@
+//
+// @author Will Steinmetz
+// @file _resets.scss
+// licence MIT
+// copyright: 2017
+// This file defines the resets available in Keroseen.
+//
+
+html {
+  font-size: 10px;// make calculations in rems easier
+}
+
+body {
+  font-size: 1.6rem;// reset to default size
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}

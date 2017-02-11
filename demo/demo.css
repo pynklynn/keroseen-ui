@@ -1,19 +1,31 @@
-.keroseen-grid:before, .keroseen-grid:after,
-.keroseen-grid .row:before,
-.keroseen-grid .row:after {
-  content: " ";
-  display: table; }
+html {
+  font-size: 10px; }
 
-.keroseen-grid:after,
-.keroseen-grid .row:after {
-  clear: both; }
+body {
+  font-size: 1.6rem;
+  margin: 0; }
+
+* {
+  box-sizing: border-box; }
+
+.keroseen-grid,
+.keroseen-grid .row {
+  display: block; }
+  .keroseen-grid:before, .keroseen-grid:after,
+  .keroseen-grid .row:before,
+  .keroseen-grid .row:after {
+    content: " ";
+    display: table; }
+  .keroseen-grid:after,
+  .keroseen-grid .row:after {
+    clear: both; }
 
 .keroseen-grid .row.spacer {
-  margin-bottom: 1em; }
+  margin-bottom: 1rem; }
 
 .keroseen-grid [class^="col-"] {
-  box-sizing: border-box;
-  padding: 0 10px;
+  display: block;
+  padding: 0 1rem;
   float: left; }
 
 .keroseen-grid.grid-12 .col-xs-1 {
@@ -473,6 +485,40 @@
   float: none;
   margin-left: auto;
   margin-right: auto; }
+
+.container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+  .container:before, .container:after {
+    content: " ";
+    display: table; }
+  .container:after {
+    clear: both; }
+  @media screen and (min-width: 306px) and (orientation: portrait) {
+    .container {
+      max-width: 306px; } }
+  @media screen and (min-width: 544px) {
+    .container {
+      max-width: 544px; } }
+  @media screen and (min-width: 432px) and (orientation: portrait) {
+    .container {
+      max-width: 432px; } }
+  @media screen and (min-width: 768px) {
+    .container {
+      max-width: 768px; } }
+  @media screen and (min-width: 558px) and (orientation: portrait) {
+    .container {
+      max-width: 558px; } }
+  @media screen and (min-width: 992px) {
+    .container {
+      max-width: 992px; } }
+  @media screen and (min-width: 675px) and (orientation: portrait) {
+    .container {
+      max-width: 675px; } }
+  @media screen and (min-width: 1200px) {
+    .container {
+      max-width: 1200px; } }
 
 @media screen and (min-width: 0) and (max-width: 543px) {
   .screen-reader-xs-only,

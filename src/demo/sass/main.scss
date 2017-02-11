@@ -2,9 +2,11 @@
 @import '../../components/variables';
 @import '../../components/utilities';
 @import '../../components/visibility';
+@import '../../components/resets';
 
 // configured consumptions
 @import 'grid';
+@import 'containers';
 
 // consumptions that don't require configuration
 @include keroseen-screen-reader();
