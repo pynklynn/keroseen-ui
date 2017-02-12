@@ -9,7 +9,7 @@ The mixins provide basic sizing and positioning defaults for elements or groups 
 
 The features below are basic and ready for customization upon consumption.
 
-* Configurable grid - pass in options to create one or multiple grids with your choice of columns (defaults to 12 columns)
+* Configurable grid - pass in options to create one or multiple grids with your choice of columns (defaults to 12 columns) and optional breakpoints for portrait orientation
 * Responsive containers
 * Minimal resets
 * Visibility classes to show and hide elements as well as make elements viewable only to screen readers
@@ -23,4 +23,4 @@ The following items are not planned as features and likely will not be implement
 * Color variables
 * Large library of rigidly sized elements - all components styles will have loose stylings to build on
 * Fully color-themed components
-* Shadows, animations, and other fancy visuals
+* Shadows, animations, and other fancy visuals where not required by the element (ex: cards have a shadow to denote stacking)

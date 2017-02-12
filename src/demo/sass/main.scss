@@ -4,9 +4,14 @@
 @import '../../components/visibility';
 @import '../../components/resets';
 
+@include keroseen-resets();
+
 // configured consumptions
 @import 'grid';
 @import 'containers';
+
+// demo specific files
+@import 'demo';
 
 // consumptions that don't require configuration
 @include keroseen-screen-reader();
