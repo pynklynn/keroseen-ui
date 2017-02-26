@@ -20,6 +20,11 @@
     }
   }
 
+  .keroseen-card-subtitle {
+    @include keroseen-card-subtitle();
+    color: #999;
+  }
+
   .keroseen-card-image {
     @include keroseen-card-image();
   }

@@ -593,6 +593,10 @@ body {
       padding: 0 1.5rem;
       position: absolute;
       color: white; }
+  .keroseen-card .keroseen-card-subtitle {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: #999; }
   .keroseen-card .keroseen-card-image {
     max-width: 100%; }
   .keroseen-card .keroseen-card-actions {
@@ -606,7 +610,7 @@ body {
       padding: 1rem;
       text-decoration: none; }
       .keroseen-card .keroseen-card-actions .keroseen-card-action-item:first-child {
-        margin-left: 0; }
+        margin-left: -1rem; }
       .keroseen-card .keroseen-card-actions .keroseen-card-action-item:hover, .keroseen-card .keroseen-card-actions .keroseen-card-action-item:focus {
         background-color: rgba(255, 0, 0, 0.1); }
 
