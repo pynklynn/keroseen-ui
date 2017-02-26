@@ -23,7 +23,7 @@ body {
 .keroseen-grid .row.spacer {
   margin-bottom: 1rem; }
 
-.keroseen-grid [class^="col-"] {
+.keroseen-grid [class*="col-"] {
   display: block;
   padding: 0 1rem;
   float: left; }
@@ -519,6 +519,99 @@ body {
   @media screen and (min-width: 1200px) {
     .container {
       max-width: 1200px; } }
+
+/**
+ * basic card:
+ * <card>
+ *   <card-title></card-title>
+ *   <card-content></card-content>
+ *   <card-actions>
+ *     <card-action></card-action>
+ *   </card-actions>
+ * </card>
+ */
+/**
+ * stacked plane card:
+ * <card>
+ *   <card-figure>
+ *     <card-image></card-image>
+ *     <card-title></card-title>
+ *   </card-figure>
+ *   <card-sub-title></card-sub-title>
+ *   <card-content></card-content>
+ *   <card-actions>
+ *     <card-action></card-action>
+ *   </card-actions>
+ * </card>
+ *
+ * OR
+ *
+ * <card>
+ *   <card-figure>
+ *     <card-image></card-image>
+ *   </card-figure>
+ *   <card-title></card-title>
+ *   <card-sub-title></card-sub-title>
+ *   <card-content></card-content>
+ *   <card-actions>
+ *     <card-action></card-action>
+ *   </card-actions>
+ * </card>
+ */
+/**
+ * co-planar card
+ * <card>
+ *   <card-container>
+ *     <card-title></card-title>
+ *     <card-content></card-content>
+ *     <card-footer></card-footer>
+ *   </card-container>
+ *   <card-image></card-image>
+ * </card>
+ */
+/**
+ * Card list types:
+ * * Reader list - stacked with co-planar cards, on mobile margins and shadow disappear
+ * * Preview grid - image and title only
+ * * Actions grid - card with image, title, and actions in a grid with variable width-columns
+ */
+.keroseen-card {
+  border-radius: 2px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+  padding: 1.5rem 1.5rem .5rem; }
+  .keroseen-card .keroseen-card-content {
+    font-size: 1.4rem;
+    padding-bottom: 1rem; }
+  .keroseen-card .keroseen-card-title {
+    font-size: 2rem;
+    margin-bottom: .5rem; }
+  .keroseen-card .keroseen-card-figure {
+    margin: -1.5rem -1.5rem 2rem -1.5rem;
+    position: relative; }
+    .keroseen-card .keroseen-card-figure .keroseen-card-title {
+      bottom: 1.5rem;
+      padding: 0 1.5rem;
+      position: absolute;
+      color: white; }
+  .keroseen-card .keroseen-card-image {
+    max-width: 100%; }
+  .keroseen-card .keroseen-card-actions {
+    text-transform: uppercase; }
+    .keroseen-card .keroseen-card-actions .keroseen-card-action-item {
+      border-radius: .2rem;
+      display: inline-block;
+      font-size: 1.4rem;
+      font-weight: bold;
+      margin-left: 1rem;
+      padding: 1rem;
+      text-decoration: none; }
+      .keroseen-card .keroseen-card-actions .keroseen-card-action-item:first-child {
+        margin-left: 0; }
+      .keroseen-card .keroseen-card-actions .keroseen-card-action-item:hover, .keroseen-card .keroseen-card-actions .keroseen-card-action-item:focus {
+        background-color: rgba(255, 0, 0, 0.1); }
+
+body {
+  font-family: Geneva, Verdana, Helvetica, Arial, sans-serif; }
 
 @media screen and (min-width: 0) and (max-width: 543px) {
   .screen-reader-xs-only,

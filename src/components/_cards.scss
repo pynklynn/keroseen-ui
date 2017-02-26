@@ -1,0 +1,115 @@
+//
+// @author Will Steinmetz
+// @file _cards.scss
+// licence MIT
+// copyright: 2017
+// This file defines the card styles available in Keroseen.
+//
+
+/**
+ * basic card:
+ * <card>
+ *   <card-title></card-title>
+ *   <card-content></card-content>
+ *   <card-actions>
+ *     <card-action></card-action>
+ *   </card-actions>
+ * </card>
+ */
+
+/**
+ * stacked plane card:
+ * <card>
+ *   <card-figure>
+ *     <card-image></card-image>
+ *     <card-title></card-title>
+ *   </card-figure>
+ *   <card-sub-title></card-sub-title>
+ *   <card-content></card-content>
+ *   <card-actions>
+ *     <card-action></card-action>
+ *   </card-actions>
+ * </card>
+ *
+ * OR
+ *
+ * <card>
+ *   <card-figure>
+ *     <card-image></card-image>
+ *   </card-figure>
+ *   <card-title></card-title>
+ *   <card-sub-title></card-sub-title>
+ *   <card-content></card-content>
+ *   <card-actions>
+ *     <card-action></card-action>
+ *   </card-actions>
+ * </card>
+ */
+
+/**
+ * co-planar card
+ * <card>
+ *   <card-container>
+ *     <card-title></card-title>
+ *     <card-content></card-content>
+ *     <card-footer></card-footer>
+ *   </card-container>
+ *   <card-image></card-image>
+ * </card>
+ */
+
+@mixin keroseen-card() {
+  border-radius: 2px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .25);
+  padding: 1.5rem 1.5rem .5rem;
+}
+
+@mixin keroseen-card-title() {
+  font-size: 2rem;
+  margin-bottom: .5rem;
+}
+
+@mixin keroseen-card-content() {
+  font-size: 1.4rem;
+  padding-bottom: 1rem;
+}
+
+@mixin keroseen-card-actions() {
+  text-transform: uppercase;
+}
+
+@mixin keroseen-card-action-item() {
+  border-radius: .2rem;
+  display: inline-block;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-left: 1rem;
+  padding: 1rem;
+  text-decoration: none;
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+@mixin keroseen-card-figure() {
+  margin: -1.5rem -1.5rem 2rem -1.5rem;
+  position: relative;
+}
+
+@mixin keroseen-card-image() {
+  max-width: 100%;
+}
+
+@mixin keroseen-card-figure-title {
+  bottom: 1.5rem;
+  padding: 0 1.5rem;
+  position: absolute;
+}
+
+/**
+ * Card list types:
+ * * Reader list - stacked with co-planar cards, on mobile margins and shadow disappear
+ * * Preview grid - image and title only
+ * * Actions grid - card with image, title, and actions in a grid with variable width-columns
+ */

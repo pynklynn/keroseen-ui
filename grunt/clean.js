@@ -16,5 +16,8 @@ module.exports = {
   ],
   html: [
     'demo/**/*.html'
+  ],
+  images: [
+    'demo/**/*.{png,jpg,gif}'
   ]
 };

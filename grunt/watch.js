@@ -32,5 +32,14 @@ module.exports = {
     options: {
       spawn: false
     }
+  },
+  images: {
+    files: [
+      'src/demo/images/**/*.{png,jpg,gif}'
+    ],
+    tasks: [
+      'clean:images',
+      'imagemin'
+    ]
   }
 };

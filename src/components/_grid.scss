@@ -45,7 +45,7 @@
 
   // @NOTE sizes in REMs are designed with the base font at 10px on the HTML element
   // the Keroseen resets provide this setting for ease of use
-  [class^="col-"] {
+  [class*="col-"] {
     display: block;
     padding: 0 1rem;
     float: left;

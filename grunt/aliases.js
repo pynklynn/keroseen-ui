@@ -14,6 +14,7 @@ module.exports = {
     'watch'
   ],
   'build': [
+    'imagemin',
     'pug',
     'sass'
   ]

@@ -24,3 +24,7 @@ The following items are not planned as features and likely will not be implement
 * Large library of rigidly sized elements - all components styles will have loose stylings to build on
 * Fully color-themed components
 * Shadows, animations, and other fancy visuals where not required by the element (ex: cards have a shadow to denote stacking)
+
+## Browser support
+
+This framework is tested in and designed for ever green browsers including Chrome (and by extension Opera), Edge, Firefox, and Safari. The framework targets the most recent and one older version of each (excluding Safari which is the most recent version only as Apple takes between 12 and 24 months for releases). There is no support built in for Internet Explorer but many, if not most, styles will still function properly. The framework may work in other browsers that it is not tested in.

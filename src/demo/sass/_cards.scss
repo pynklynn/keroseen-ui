@@ -1,0 +1,39 @@
+@import '../../components/cards';
+
+.keroseen-card {
+  @include keroseen-card();
+
+  .keroseen-card-content {
+    @include keroseen-card-content();
+  }
+
+  .keroseen-card-title {
+    @include keroseen-card-title();
+  }
+
+  .keroseen-card-figure {
+    @include keroseen-card-figure();
+
+    .keroseen-card-title {
+      @include keroseen-card-figure-title();
+      color: white;
+    }
+  }
+
+  .keroseen-card-image {
+    @include keroseen-card-image();
+  }
+
+  .keroseen-card-actions {
+    @include keroseen-card-actions();
+
+    .keroseen-card-action-item {
+      @include keroseen-card-action-item();
+
+      &:hover,
+      &:focus {
+        background-color: rgba(red, .1);
+      }
+    }
+  }
+}
