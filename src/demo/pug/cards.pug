@@ -12,7 +12,7 @@ html
 
     .container
       .keroseen-grid.grid-12
-        .row
+        .row.spacer
           .col-md-4
             .keroseen-card
               .keroseen-card-title My Test Card 1
@@ -42,3 +42,11 @@ html
                 a(href="https://angularjs.org/", target="_blank").keroseen-card-action-item Angular
                 a(href="https://www.polymer-project.org/", target="_blank").keroseen-card-action-item Polymer
                 a(href="https://www.webcomponents.org/", target="_blank").keroseen-card-action-item Web Components
+        .row.spacer
+          .col-md-4
+            .keroseen-card.keroseen-card-co-planar.row
+              .keroseen-card-container.col-md-8
+                .keroseen-card-title My Fake Album
+                .keroseen-card-content The Fake Band
+              .keroseen-card-figure.col-md-4
+                img(src="./images/pexels-photo-89845.jpg", alt="Vinyl Albums Stack in Boxes").keroseen-card-image

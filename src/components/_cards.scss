@@ -112,6 +112,20 @@
   position: absolute;
 }
 
+@mixin keroseen-card-co-planar {
+  // intentionally empty
+}
+
+@mixin keroseen-card-co-planar-container {
+  padding: 0 1rem 0 0;
+}
+
+@mixin keroseen-card-co-planar-image {
+  font-size: 0;
+  margin: 0 0 1rem 0;
+  padding: 0 0 0 1rem;
+}
+
 /**
  * Card list types:
  * * Reader list - stacked with co-planar cards, on mobile margins and shadow disappear

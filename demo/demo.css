@@ -613,6 +613,12 @@ body {
         margin-left: -1rem; }
       .keroseen-card .keroseen-card-actions .keroseen-card-action-item:hover, .keroseen-card .keroseen-card-actions .keroseen-card-action-item:focus {
         background-color: rgba(255, 0, 0, 0.1); }
+  .keroseen-card.keroseen-card-co-planar .keroseen-card-container {
+    padding: 0 1rem 0 0; }
+  .keroseen-card.keroseen-card-co-planar .keroseen-card-figure {
+    font-size: 0;
+    margin: 0 0 1rem 0;
+    padding: 0 0 0 1rem; }
 
 body {
   font-family: Geneva, Verdana, Helvetica, Arial, sans-serif; }

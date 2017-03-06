@@ -41,4 +41,16 @@
       }
     }
   }
+
+  &.keroseen-card-co-planar {
+    @include keroseen-card-co-planar();
+
+    .keroseen-card-container {
+      @include keroseen-card-co-planar-container();
+    }
+
+    .keroseen-card-figure {
+      @include keroseen-card-co-planar-image();
+    }
+  }
 }
