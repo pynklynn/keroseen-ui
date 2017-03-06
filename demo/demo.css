@@ -569,12 +569,6 @@ body {
  *   <card-image></card-image>
  * </card>
  */
-/**
- * Card list types:
- * * Reader list - stacked with co-planar cards, on mobile margins and shadow disappear
- * * Preview grid - image and title only
- * * Actions grid - card with image, title, and actions in a grid with variable width-columns
- */
 .keroseen-card {
   border-radius: 2px;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
