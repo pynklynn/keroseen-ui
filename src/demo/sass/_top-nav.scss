@@ -1,0 +1,29 @@
+@import '../../components/top-nav';
+
+.has-keroseen-top-nav {
+  @include has-keroseen-top-nav();
+}
+
+.keroseen-top-nav {
+  @include keroseen-top-nav();
+
+  &.fixed {
+    @include keroseen-top-nav-fixed();
+  }
+
+  .keroseen-top-nav-main {
+    @include keroseen-top-nav-main();
+  }
+
+  .keroseen-top-nav-secondary {
+    @include keroseen-top-nav-secondary();
+  }
+
+  .keroseen-top-nav-identifier {
+    @include keroseen-top-nav-identifier();
+  }
+
+  .keroseen-nav-link {
+    @include keroseen-nav-link();
+  }
+}
