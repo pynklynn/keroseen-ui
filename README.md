@@ -1,20 +1,20 @@
 # Keroseen UI
-Sass framework of minimal mixins to use as a blueprint to create a custom user interface without the bloat.
 
-This framework intentionally comes with no compiled visible assets. In fact, if a developer attempts to use the framework as is, little to no usable CSS will be generated. The framework is designed as mixins to be included as parts of other classes to generate a framework.
+Keroseen is a set of minimally designed Sass mixins (Scss format) to be used for generating styles for a web project. The goal is to import the parts of the library you want to use and make use of the appropriate mixins in your styles. In fact, if you include the libraries and don't `@include` any of the mixins, zero code from the framework will be generated.
 
-The mixins provide basic sizing and positioning defaults for elements or groups of elements on a page. Aside from the bare minimum, no other stylings are included.
+A major design goal of the library is to include the base styles directly in the developer defined styles instead of piling on override selectors. The mixins provide basic sizing and positioning defaults for elements or groups of elements on a page. Aside from the bare minimum for each component type, no other stylings are included.
 
 ## Features
 
-The features below are basic and ready for customization upon consumption.
+Mixins ready for `@include`:
 
+* Minimal resets
 * Configurable grid - pass in options to create one or multiple grids with your choice of columns (defaults to 12 columns) and optional breakpoints for portrait orientation
 * Responsive containers
-* Minimal resets
 * Visibility classes to show and hide elements as well as make elements viewable only to screen readers
 * Prefixed (`$keroseen-`) Sass variables available for re-use
 * Basic card elements
+* Top navigation bar
 
 ## Things that are not planned as features
 
@@ -27,7 +27,7 @@ The following items are not planned as features and likely will not be implement
 
 ## Browser support
 
-This framework is tested in and designed for ever green browsers including Chrome (and by extension Opera), Edge, Firefox, and Safari. The framework targets the most recent and one older version of each (excluding Safari which is the most recent version only as Apple takes between 12 and 24 months for releases). There is no support built in for Internet Explorer but many, if not most, styles will still function properly. The framework may work in other browsers that it is not tested in.
+This framework is tested in and designed for evergreen browsers including Chrome (and by extension Opera), Edge, Firefox, and Safari. The framework targets the most recent and one older version of each (excluding Safari which is the most recent version only as Apple takes between 12 and 24 months for releases). There is no support built in for Internet Explorer but many, if not most, styles will still function properly. The framework may work in other browsers that are not tested.
 
 ## Credits/Attribution
 
