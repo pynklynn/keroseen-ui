@@ -11,12 +11,16 @@
     @include keroseen-top-nav-fixed();
   }
 
-  .keroseen-top-nav-main {
-    @include keroseen-top-nav-main();
-  }
+  .keroseen-top-nav-container {
+    @include keroseen-top-nav-container();
 
-  .keroseen-top-nav-secondary {
-    @include keroseen-top-nav-secondary();
+    .keroseen-top-nav-main {
+      @include keroseen-top-nav-main();
+    }
+
+    .keroseen-top-nav-secondary {
+      @include keroseen-top-nav-secondary();
+    }
   }
 
   .keroseen-top-nav-identifier {

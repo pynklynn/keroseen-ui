@@ -628,8 +628,11 @@ body {
   top: 0; }
   .keroseen-top-nav.fixed {
     position: fixed; }
-  .keroseen-top-nav .keroseen-top-nav-secondary {
-    margin-left: auto; }
+  .keroseen-top-nav .keroseen-top-nav-container {
+    display: flex;
+    flex-grow: 1; }
+    .keroseen-top-nav .keroseen-top-nav-container .keroseen-top-nav-secondary {
+      margin-left: auto; }
   .keroseen-top-nav .keroseen-top-nav-identifier {
     font-size: 3rem;
     margin: -1rem 2rem -1rem 0; }

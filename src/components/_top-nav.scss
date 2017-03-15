@@ -47,3 +47,8 @@
 @mixin keroseen-top-nav-secondary {
   margin-left: auto;
 }
+
+@mixin keroseen-top-nav-container {
+  display: flex;
+  flex-grow: 1;
+}
