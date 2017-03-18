@@ -8,11 +8,12 @@
 
 @mixin keroseen-resets() {
   html {
-    font-size: 10px;// make calculations in rems easier
+    // the default for $keroseen-rem-base-size is 10px to make calculations in rems easier
+    font-size: $keroseen-rem-base-size;
   }
 
   body {
-    font-size: 1.6rem;// reset to default size
+    font-size: keroseen-px-to-rem(16px);// reset to default size
     margin: 0;
   }
 

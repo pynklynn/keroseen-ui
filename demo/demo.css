@@ -570,15 +570,15 @@ body {
  * </card>
  */
 .keroseen-card {
-  border-radius: 2px;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
-  padding: 1.5rem 1.5rem .5rem; }
+  border-radius: 0.2rem;
+  box-shadow: 0 0.2rem 0.5rem 0 rgba(0, 0, 0, 0.25);
+  padding: 1.5rem 1.5rem 0.5rem; }
   .keroseen-card .keroseen-card-content {
     font-size: 1.4rem;
     padding-bottom: 1rem; }
   .keroseen-card .keroseen-card-title {
     font-size: 2rem;
-    margin-bottom: .5rem; }
+    margin-bottom: 0.5rem; }
   .keroseen-card .keroseen-card-figure {
     margin: -1.5rem -1.5rem 2rem -1.5rem;
     position: relative; }
@@ -596,7 +596,7 @@ body {
   .keroseen-card .keroseen-card-actions {
     text-transform: uppercase; }
     .keroseen-card .keroseen-card-actions .keroseen-card-action-item {
-      border-radius: .2rem;
+      border-radius: 0.2rem;
       display: inline-block;
       font-size: 1.4rem;
       font-weight: bold;
@@ -637,9 +637,9 @@ body {
     font-size: 3rem;
     margin: -1rem 2rem -1rem 0; }
   .keroseen-top-nav .keroseen-nav-link {
-    border-radius: .2rem;
+    border-radius: 0.2rem;
     margin-left: 1rem;
-    padding: .5rem 1.5rem; }
+    padding: 0.5rem 1.5rem; }
     .keroseen-top-nav .keroseen-nav-link:first-child {
       margin-left: 0; }
 

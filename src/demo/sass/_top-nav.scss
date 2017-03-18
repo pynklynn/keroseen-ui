@@ -29,5 +29,6 @@
 
   .keroseen-nav-link {
     @include keroseen-nav-link();
+    @include keroseen-top-nav-first-link();
   }
 }

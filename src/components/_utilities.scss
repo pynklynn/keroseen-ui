@@ -8,3 +8,7 @@
     clear: both;
   }
 }
+
+@function keroseen-px-to-rem($pixel-value) {
+  @return ($pixel-value / $keroseen-rem-base-size) * 1rem;
+}

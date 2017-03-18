@@ -59,24 +59,24 @@
  */
 
 @mixin keroseen-card() {
-  border-radius: 2px;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .25);
-  padding: 1.5rem 1.5rem .5rem;
+  border-radius: keroseen-px-to-rem(2px);
+  box-shadow: 0 keroseen-px-to-rem(2px) keroseen-px-to-rem(5px) 0 rgba(0, 0, 0, .25);
+  padding: keroseen-px-to-rem(15px) keroseen-px-to-rem(15px) keroseen-px-to-rem(5px);
 }
 
 @mixin keroseen-card-title() {
-  font-size: 2rem;
-  margin-bottom: .5rem;
+  font-size: keroseen-px-to-rem(20px);
+  margin-bottom: keroseen-px-to-rem(5px);
 }
 
 @mixin keroseen-card-subtitle() {
-  font-size: 1.4rem;
-  margin-bottom: 1rem;
+  font-size: keroseen-px-to-rem(14px);
+  margin-bottom: keroseen-px-to-rem(10px);
 }
 
 @mixin keroseen-card-content() {
-  font-size: 1.4rem;
-  padding-bottom: 1rem;
+  font-size: keroseen-px-to-rem(14px);
+  padding-bottom: keroseen-px-to-rem(10px);
 }
 
 @mixin keroseen-card-actions() {
@@ -84,21 +84,21 @@
 }
 
 @mixin keroseen-card-action-item() {
-  border-radius: .2rem;
+  border-radius: keroseen-px-to-rem(2px);
   display: inline-block;
-  font-size: 1.4rem;
+  font-size: keroseen-px-to-rem(14px);
   font-weight: bold;
-  margin-left: 1rem;
-  padding: 1rem;
+  margin-left: keroseen-px-to-rem(10px);
+  padding: keroseen-px-to-rem(10px);
   text-decoration: none;
 
   &:first-child {
-    margin-left: -1rem;
+    margin-left: keroseen-px-to-rem(-10px);
   }
 }
 
 @mixin keroseen-card-figure() {
-  margin: -1.5rem -1.5rem 2rem -1.5rem;
+  margin: keroseen-px-to-rem(-15px) keroseen-px-to-rem(-15px) keroseen-px-to-rem(20px) keroseen-px-to-rem(-15px);
   position: relative;
 }
 
@@ -107,8 +107,8 @@
 }
 
 @mixin keroseen-card-figure-title {
-  bottom: 1.5rem;
-  padding: 0 1.5rem;
+  bottom: keroseen-px-to-rem(15px);
+  padding: 0 keroseen-px-to-rem(15px);
   position: absolute;
 }
 
@@ -117,11 +117,11 @@
 }
 
 @mixin keroseen-card-co-planar-container {
-  padding: 0 1rem 0 0;
+  padding: 0 keroseen-px-to-rem(10px) 0 0;
 }
 
 @mixin keroseen-card-co-planar-image {
   font-size: 0;
-  margin: 0 0 1rem 0;
-  padding: 0 0 0 1rem;
+  margin: 0 0 keroseen-px-to-rem(10px) 0;
+  padding: 0 0 0 keroseen-px-to-rem(10px);
 }

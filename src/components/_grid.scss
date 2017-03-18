@@ -40,14 +40,14 @@
   // @NOTE sizes in REMs are designed with the base font at 10px on the HTML element
   // the Keroseen resets provide this setting for ease of use
   .row.spacer {
-    margin-bottom: 1rem;
+    margin-bottom: keroseen-px-to-rem(10px);
   }
 
   // @NOTE sizes in REMs are designed with the base font at 10px on the HTML element
   // the Keroseen resets provide this setting for ease of use
   [class*="col-"] {
     display: block;
-    padding: 0 1rem;
+    padding: 0 keroseen-px-to-rem(10px);
     float: left;
   }
 
