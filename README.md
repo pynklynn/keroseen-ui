@@ -9,12 +9,20 @@ A major design goal of the library is to include the base styles directly in the
 Mixins ready for `@include`:
 
 * Minimal resets
-* Configurable grid - pass in options to create one or multiple grids with your choice of columns (defaults to 12 columns) and optional breakpoints for portrait orientation
+* Configurable, responsive grid - pass in options to create one or multiple grids with your choice of columns (defaults to 12 columns) and optional breakpoints for portrait orientation
 * Responsive containers
 * Visibility classes to show and hide elements as well as make elements viewable only to screen readers
 * Prefixed (`$keroseen-`) Sass variables available for re-use
 * Basic card elements
-* Top navigation bar
+* Top navigation bar either fixed or scrolling
+* Side navigation bar - scrolls independently
+* Utility function and mixins
+
+### Roadmap leading to first release
+
+* Responsive functionality
+    * Mobile-first navigation for both top and side nav
+    * Mobile-first card
 
 ## Things that are not planned as features
 

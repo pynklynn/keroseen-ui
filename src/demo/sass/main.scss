@@ -3,6 +3,7 @@
 @import '../../components/utilities';
 @import '../../components/visibility';
 @import '../../components/resets';
+@import '../../components/shared-nav';
 
 @include keroseen-resets();
 
@@ -11,6 +12,7 @@
 @import 'containers';
 @import 'cards';
 @import 'top-nav';
+@import 'side-nav';
 
 // demo specific files
 @import 'demo';

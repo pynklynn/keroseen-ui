@@ -1,0 +1,21 @@
+@import '../../components/side-nav';
+
+.has-keroseen-side-nav {
+  @include has-keroseen-side-nav();
+}
+
+.keroseen-side-nav {
+  @include keroseen-side-nav();
+
+  .keroseen-side-nav-identifier {
+    @include keroseen-side-nav-identifier();
+  }
+
+  .keroseen-side-nav-container {
+    @include keroseen-side-nav-container();
+  }
+
+  .keroseen-nav-link {
+    @include keroseen-side-nav-link();
+  }
+}

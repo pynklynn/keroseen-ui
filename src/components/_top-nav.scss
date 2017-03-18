@@ -5,13 +5,15 @@
 // copyright: 2017
 // This file defines the top nav styles available in Keroseen.
 //
+// @required shared-nav
+//
 
 @mixin has-keroseen-top-nav() {
   padding-top: keroseen-px-to-rem(65px);
 }
 
 @mixin keroseen-top-nav() {
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .25);
+  box-shadow: 0 keroseen-px-to-rem(2px) keroseen-px-to-rem(5px) 0 rgba(0, 0, 0, .25);
   display: flex;
   flex-direction: row;
   left: 0;
@@ -30,10 +32,9 @@
   margin: keroseen-px-to-rem(-10px) keroseen-px-to-rem(20px) keroseen-px-to-rem(-10px) 0;
 }
 
-@mixin keroseen-nav-link() {
-  border-radius: keroseen-px-to-rem(2px);
+@mixin keroseen-top-nav-link() {
+  @include keroseen-nav-link();
   margin-left: keroseen-px-to-rem(10px);
-  padding: keroseen-px-to-rem(5px) keroseen-px-to-rem(15px);
 }
 
 @mixin keroseen-top-nav-first-link() {

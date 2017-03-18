@@ -1,0 +1,38 @@
+//
+// @author Will Steinmetz
+// @file _side-nav.scss
+// licence MIT
+// copyright: 2017
+// This file defines the side nav styles available in Keroseen.
+//
+// @required shared-nav
+//
+
+@mixin has-keroseen-side-nav() {
+  padding-left: keroseen-px-to-rem(250px);
+}
+
+@mixin keroseen-side-nav() {
+  bottom: 0;
+  box-shadow: 0 keroseen-px-to-rem(2px) keroseen-px-to-rem(5px) 0 rgba(0, 0, 0, .25);
+  left: 0;
+  overflow-y: auto;
+  padding: keroseen-px-to-rem(20px);
+  position: fixed;
+  top: 0;
+  width: keroseen-px-to-rem(240px);
+}
+
+@mixin keroseen-side-nav-identifier() {
+  font-size: keroseen-px-to-rem(30px);
+  margin-bottom: keroseen-px-to-rem(10px);
+}
+
+@mixin keroseen-side-nav-container() {
+  margin: 0 keroseen-px-to-rem(-10px);
+}
+
+@mixin keroseen-side-nav-link() {
+  @include keroseen-nav-link();
+  display: block;
+}
