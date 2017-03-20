@@ -1,9 +1,9 @@
-doctype html
+extends layout
 
-html
-  head
-    title Keroseen UI - side nav demo
-    link(rel='stylesheet', href='./demo.css', media='screen')
+block title
+  title Keroseen UI - side nav demo
+
+block content
   body.has-keroseen-side-nav
     aside.keroseen-side-nav
       div.keroseen-side-nav-identifier Keroseen

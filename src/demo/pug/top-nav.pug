@@ -1,9 +1,9 @@
-doctype html
+extends layout
 
-html
-  head
-    title Keroseen UI - top nav demo
-    link(rel='stylesheet', href='./demo.css', media='screen')
+block title
+  title Keroseen UI - top nav demo
+
+block content
   body.has-keroseen-top-nav
     header.keroseen-top-nav.fixed
       span.keroseen-top-nav-identifier Keroseen

@@ -1,14 +1,16 @@
-doctype html
+extends layout
 
-html
-  head
-    title Keroseen UI - grid demo
-    link(rel='stylesheet', href='./demo.css', media='screen')
-    style(type='text/css').
-      [class^="col-"] {
-        background-color: red;
-        border: solid 1px blue;
-      }
+block title
+  title Keroseen UI - grid demo
+
+block headerStyles
+  style(type='text/css').
+    [class^="col-"] {
+      background-color: red;
+      border: solid 1px blue;
+    }
+
+block content
   body
     h1 Keroseen UI - grid demo
 
