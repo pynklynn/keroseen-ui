@@ -6,6 +6,7 @@ block title
 block content
   body.has-keroseen-side-nav
     aside.keroseen-side-nav
+      span.keroseen-side-nav-menu-button &#9776;
       div.keroseen-side-nav-identifier Keroseen
       nav.keroseen-side-nav-container
         a(href="./").keroseen-nav-link Home
@@ -13,9 +14,21 @@ block content
         a(href="./cards.html").keroseen-nav-link Cards
         a(href="./top-nav.html").keroseen-nav-link Top nav
 
-    h1 Keroseen UI - side nav demo
+    main
+      h1 Keroseen UI - side nav demo
 
-    p
-      a(href="./") Back to home
+      p
+        a(href="./") Back to home
 
-    p Basic side nav
+      p Basic side nav
+
+      p.visible-xs
+        strong Note:
+        |  the mobile-sized demo requires JavaScript in order to add the class required to open and close the menu. Depending on the developer's usage, it may require some z-indexes to be added to elements.
+
+    script(type="text/javascript").
+      (function() {
+        document.querySelector('.keroseen-side-nav-menu-button').addEventListener('click', function(event) {
+          document.querySelector('.keroseen-side-nav').classList.toggle('open');
+        });
+      })();

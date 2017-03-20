@@ -7,12 +7,30 @@
 .keroseen-side-nav {
   @include keroseen-side-nav();
 
+  .keroseen-side-nav-menu-button {
+    @include keroseen-nav-mobile-menu();
+
+    z-index: 1000;
+  }
+
   .keroseen-side-nav-identifier {
     @include keroseen-side-nav-identifier();
   }
 
   .keroseen-side-nav-container {
+    background-color: white;
+
     @include keroseen-side-nav-container();
+
+    @media (max-width: $keroseen-screen-xs) {
+      padding-top: keroseen-px-to-rem(50px)
+    }
+  }
+
+  &.open {
+    .keroseen-side-nav-container {
+      @include keroseen-side-nav-mobile-open();
+    }
   }
 
   .keroseen-nav-link {

@@ -10,3 +10,19 @@
   border-radius: keroseen-px-to-rem(2px);
   padding: keroseen-px-to-rem(5px) keroseen-px-to-rem(10px);
 }
+
+@mixin keroseen-nav-mobile-menu() {
+  display: none;
+
+  @media (max-width: $keroseen-screen-xs) {
+    border-radius: keroseen-px-to-rem(2px);
+    cursor: pointer;
+    display: block;
+    font-size: keroseen-px-to-rem(30px);
+    height: keroseen-px-to-rem(40px);
+    line-height: 1.3;
+    margin: keroseen-px-to-rem(-5px) 0 0 keroseen-px-to-rem(-5px);
+    text-align: center;
+    width: keroseen-px-to-rem(40px);
+  }
+}

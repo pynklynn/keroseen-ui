@@ -15,13 +15,13 @@ Mixins ready for `@include`:
 * Prefixed (`$keroseen-`) Sass variables available for re-use
 * Basic card elements
 * Top navigation bar either fixed or scrolling
-* Side navigation bar - scrolls independently
+* Side navigation bar - scrolls independently, mobile-first responsiveness
 * Utility function and mixins
 
 ### Roadmap leading to first release
 
 * Responsive functionality
-    * Mobile-first navigation for both top and side nav
+    * Mobile-first navigation both top nav
     * Mobile-first card
 
 ## Things that are not planned as features
