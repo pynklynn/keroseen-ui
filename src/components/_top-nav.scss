@@ -9,7 +9,7 @@
 //
 
 @mixin has-keroseen-top-nav() {
-  padding-top: keroseen-px-to-rem(50px);
+  @include keroseen-nav-has-nav();
 
   @media (min-width: $keroseen-screen-sm) {
     padding-top: keroseen-px-to-rem(65px);
@@ -17,19 +17,13 @@
 }
 
 @mixin keroseen-top-nav() {
-  box-shadow: 0 keroseen-px-to-rem(2px) keroseen-px-to-rem(5px) 0 rgba(0, 0, 0, .25);
-  display: flex;
-  height: keroseen-px-to-rem(50px);
-  left: 0;
-  padding: keroseen-px-to-rem(10px);
-  position: absolute;
-  right: 0;
-  top: 0;
+  @include keroseen-nav-mobile-base();
 
   @media (min-width: $keroseen-screen-sm) {
     flex-direction: row;
     height: keroseen-px-to-rem(60px);
     padding: keroseen-px-to-rem(15px);
+    position: absolute;
   }
 }
 
@@ -38,11 +32,9 @@
 }
 
 @mixin keroseen-top-nav-identifier() {
-  font-size: keroseen-px-to-rem(24px);
-  margin-left: keroseen-px-to-rem(5px);
+  @include keroseen-nav-identifier();
 
   @media (min-width: $keroseen-screen-sm) {
-    font-size: keroseen-px-to-rem(30px);
     margin: keroseen-px-to-rem(-5px) keroseen-px-to-rem(20px) keroseen-px-to-rem(-5px) 0;
   }
 }
@@ -75,26 +67,14 @@
 }
 
 @mixin keroseen-top-nav-container {
+  @include keroseen-nav-container();
+
   @media (min-width: $keroseen-screen-sm) {
     display: flex;
     flex-grow: 1;
   }
-
-  @media (max-width: $keroseen-screen-xs) {
-    bottom: 0;
-    box-shadow: 0 keroseen-px-to-rem(2px) keroseen-px-to-rem(5px) 0 rgba(0, 0, 0, .25);
-    left: -86%;
-    margin: 0;
-    padding: keroseen-px-to-rem(15px);
-    position: fixed;
-    top: 0;
-    transition: left 0.15s ease-in-out;
-    width: 85%;
-  }
 }
 
 @mixin keroseen-top-nav-mobile-open() {
-  @media (max-width: $keroseen-screen-xs) {
-    left: 0;
-  }
+  @include keroseen-nav-mobile-open();
 }

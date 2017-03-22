@@ -615,7 +615,7 @@ body {
     padding: 0 0 0 1rem; }
 
 .has-keroseen-top-nav {
-  padding-top: 5rem; }
+  padding-top: 6rem; }
   @media (min-width: 544px) {
     .has-keroseen-top-nav {
       padding-top: 6.5rem; } }
@@ -626,14 +626,15 @@ body {
   height: 5rem;
   left: 0;
   padding: 1rem;
-  position: absolute;
+  position: fixed;
   right: 0;
   top: 0; }
   @media (min-width: 544px) {
     .keroseen-top-nav {
       flex-direction: row;
       height: 6rem;
-      padding: 1.5rem; } }
+      padding: 1.5rem;
+      position: absolute; } }
   .keroseen-top-nav.fixed {
     position: fixed; }
   @media (max-width: 543px) {
@@ -655,10 +656,6 @@ body {
         width: 4rem; } }
   .keroseen-top-nav .keroseen-top-nav-container {
     background-color: white; }
-    @media (min-width: 544px) {
-      .keroseen-top-nav .keroseen-top-nav-container {
-        display: flex;
-        flex-grow: 1; } }
     @media (max-width: 543px) {
       .keroseen-top-nav .keroseen-top-nav-container {
         bottom: 0;
@@ -670,6 +667,10 @@ body {
         top: 0;
         transition: left 0.15s ease-in-out;
         width: 85%; } }
+    @media (min-width: 544px) {
+      .keroseen-top-nav .keroseen-top-nav-container {
+        display: flex;
+        flex-grow: 1; } }
     @media (max-width: 543px) {
       .keroseen-top-nav .keroseen-top-nav-container {
         padding-top: 5rem; } }
@@ -681,7 +682,9 @@ body {
     margin-left: 0.5rem; }
     @media (min-width: 544px) {
       .keroseen-top-nav .keroseen-top-nav-identifier {
-        font-size: 3rem;
+        font-size: 3rem; } }
+    @media (min-width: 544px) {
+      .keroseen-top-nav .keroseen-top-nav-identifier {
         margin: -0.5rem 2rem -0.5rem 0; } }
   .keroseen-top-nav .keroseen-nav-link {
     border-radius: 0.2rem;
@@ -738,7 +741,9 @@ body {
     margin-left: 0.5rem; }
     @media (min-width: 544px) {
       .keroseen-side-nav .keroseen-side-nav-identifier {
-        font-size: 3rem;
+        font-size: 3rem; } }
+    @media (min-width: 544px) {
+      .keroseen-side-nav .keroseen-side-nav-identifier {
         margin: 0 0 1rem; } }
   .keroseen-side-nav .keroseen-side-nav-container {
     background-color: white;
