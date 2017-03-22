@@ -53,7 +53,7 @@
   @media (max-width: $keroseen-screen-xs) {
     bottom: 0;
     box-shadow: 0 keroseen-px-to-rem(2px) keroseen-px-to-rem(5px) 0 rgba(0, 0, 0, .25);
-    left: -85%;
+    left: -86%;
     margin: 0;
     padding: keroseen-px-to-rem(15px);
     position: fixed;
@@ -71,5 +71,4 @@
 
 @mixin keroseen-side-nav-link() {
   @include keroseen-nav-link();
-  display: block;
 }

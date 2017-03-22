@@ -11,8 +11,26 @@
     @include keroseen-top-nav-fixed();
   }
 
+  &.open {
+    .keroseen-top-nav-container {
+      @include keroseen-top-nav-mobile-open();
+    }
+  }
+
+  .keroseen-top-nav-menu-button {
+    @include keroseen-nav-mobile-menu();
+
+    z-index: 1000;
+  }
+
   .keroseen-top-nav-container {
+    background-color: white;
+
     @include keroseen-top-nav-container();
+
+    @media (max-width: $keroseen-screen-xs) {
+      padding-top: keroseen-px-to-rem(50px)
+    }
 
     .keroseen-top-nav-main {
       @include keroseen-top-nav-main();

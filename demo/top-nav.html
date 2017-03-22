@@ -6,14 +6,23 @@
     <link rel="stylesheet" href="./demo.css" media="screen">
   </head>
   <body class="has-keroseen-top-nav">
-    <header class="keroseen-top-nav fixed"><span class="keroseen-top-nav-identifier">Keroseen</span>
+    <header class="keroseen-top-nav fixed"><span class="keroseen-top-nav-menu-button">&#8942;</span><span class="keroseen-top-nav-identifier">Keroseen</span>
       <section class="keroseen-top-nav-container">
         <nav class="keroseen-top-nav-main"><a class="keroseen-nav-link" href="./">Home</a><a class="keroseen-nav-link" href="./grid.html">Grid</a><a class="keroseen-nav-link" href="./cards.html">Cards</a></nav>
         <nav class="keroseen-top-nav-secondary"><a class="keroseen-nav-link" href="./side-nav.html">Side nav</a></nav>
       </section>
     </header>
-    <h1>Keroseen UI - top nav demo</h1>
-    <p><a href="./">Back to home</a></p>
-    <p>Basic top nav</p>
+    <main>
+      <h1>Keroseen UI - top nav demo</h1>
+      <p><a href="./">Back to home</a></p>
+      <p>Basic top nav</p>
+    </main>
+    <script type="text/javascript">
+      (function() {
+        document.querySelector('.keroseen-top-nav-menu-button').addEventListener('click', function(event) {
+          document.querySelector('.keroseen-top-nav').classList.toggle('open');
+        });
+      })();
+    </script>
   </body>
 </html>

@@ -6,6 +6,7 @@ block title
 block content
   body.has-keroseen-top-nav
     header.keroseen-top-nav.fixed
+      span.keroseen-top-nav-menu-button &#8942;
       span.keroseen-top-nav-identifier Keroseen
       section.keroseen-top-nav-container
         nav.keroseen-top-nav-main
@@ -15,9 +16,17 @@ block content
         nav.keroseen-top-nav-secondary
           a(href="./side-nav.html").keroseen-nav-link Side nav
 
-    h1 Keroseen UI - top nav demo
+    main
+      h1 Keroseen UI - top nav demo
 
-    p
-      a(href="./") Back to home
+      p
+        a(href="./") Back to home
 
-    p Basic top nav
+      p Basic top nav
+    
+    script(type="text/javascript").
+      (function() {
+        document.querySelector('.keroseen-top-nav-menu-button').addEventListener('click', function(event) {
+          document.querySelector('.keroseen-top-nav').classList.toggle('open');
+        });
+      })();

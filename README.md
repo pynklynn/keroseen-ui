@@ -6,7 +6,7 @@ A major design goal of the library is to include the base styles directly in the
 
 ## Features
 
-Mixins ready for `@include`:
+Features ready for consumption as either functions or mixins:
 
 * Minimal resets
 * Configurable, responsive grid - pass in options to create one or multiple grids with your choice of columns (defaults to 12 columns) and optional breakpoints for portrait orientation
@@ -14,14 +14,13 @@ Mixins ready for `@include`:
 * Visibility classes to show and hide elements as well as make elements viewable only to screen readers
 * Prefixed (`$keroseen-`) Sass variables available for re-use
 * Basic card elements
-* Top navigation bar either fixed or scrolling
+* Top navigation bar either fixed or scrolling with page - mobile-first responsiveness
 * Side navigation bar - scrolls independently, mobile-first responsiveness
 * Utility function and mixins
 
 ### Roadmap leading to first release
 
 * Responsive functionality
-    * Mobile-first navigation both top nav
     * Mobile-first card
 
 ## Things that are not planned as features
@@ -32,6 +31,11 @@ The following items are not planned as features and likely will not be implement
 * Large library of rigidly sized elements - outside of elements based on specifications (ex: Material design specs for cards) all components styles will have loose stylings to build on
 * Fully color-themed components
 * Shadows, animations, and other fancy visuals where not required by the element (ex: cards have a shadow to denote stacking)
+
+### Also, the following will never be implemented as part of the framework
+
+* Internet Explorer support - if a developer needs support for IE, they will need to add it in their customizations
+* Support for languages other than Sass
 
 ## Browser support
 
