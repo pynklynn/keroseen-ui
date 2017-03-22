@@ -6,7 +6,7 @@
 // This file defines the containers available in Keroseen.
 //
 
-@mixin keroseen-containers($keroseen-portrait-containers: true) {
+@mixin keroseen-containers() {
   .container {
     display: block;
     margin-left: auto;
@@ -14,14 +14,6 @@
     @include clear-fix();
 
     @each $size, $breakpoint in $keroseen-breakpoints {
-      @if $keroseen-portrait-containers {
-        $portrait-breakpoint: $breakpoint * 9 / 16;
-
-        @media screen and (min-width: $portrait-breakpoint) and (orientation: portrait) {
-          max-width: $portrait-breakpoint;
-        }
-      }
-
       @media screen and (min-width: $breakpoint) {
         max-width: $breakpoint;
       }

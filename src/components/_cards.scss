@@ -61,6 +61,7 @@
 @mixin keroseen-card() {
   border-radius: keroseen-px-to-rem(2px);
   box-shadow: 0 keroseen-px-to-rem(2px) keroseen-px-to-rem(5px) 0 rgba(0, 0, 0, .25);
+  margin-bottom: keroseen-px-to-rem(10px);
   padding: keroseen-px-to-rem(15px) keroseen-px-to-rem(15px) keroseen-px-to-rem(5px);
 }
 
@@ -113,14 +114,16 @@
 }
 
 @mixin keroseen-card-co-planar {
-  // intentionally empty
+  display: flex;
 }
 
 @mixin keroseen-card-co-planar-container {
+  flex-basis: 66%;
   padding: 0 keroseen-px-to-rem(10px) 0 0;
 }
 
 @mixin keroseen-card-co-planar-image {
+  flex-basis: 34%;
   font-size: 0;
   margin: 0 0 keroseen-px-to-rem(10px) 0;
   padding: 0 0 0 keroseen-px-to-rem(10px);

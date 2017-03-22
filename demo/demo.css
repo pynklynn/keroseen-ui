@@ -495,27 +495,15 @@ body {
     display: table; }
   .container:after {
     clear: both; }
-  @media screen and (min-width: 306px) and (orientation: portrait) {
-    .container {
-      max-width: 306px; } }
   @media screen and (min-width: 544px) {
     .container {
       max-width: 544px; } }
-  @media screen and (min-width: 432px) and (orientation: portrait) {
-    .container {
-      max-width: 432px; } }
   @media screen and (min-width: 768px) {
     .container {
       max-width: 768px; } }
-  @media screen and (min-width: 558px) and (orientation: portrait) {
-    .container {
-      max-width: 558px; } }
   @media screen and (min-width: 992px) {
     .container {
       max-width: 992px; } }
-  @media screen and (min-width: 675px) and (orientation: portrait) {
-    .container {
-      max-width: 675px; } }
   @media screen and (min-width: 1200px) {
     .container {
       max-width: 1200px; } }
@@ -572,6 +560,7 @@ body {
 .keroseen-card {
   border-radius: 0.2rem;
   box-shadow: 0 0.2rem 0.5rem 0 rgba(0, 0, 0, 0.25);
+  margin-bottom: 1rem;
   padding: 1.5rem 1.5rem 0.5rem; }
   .keroseen-card .keroseen-card-content {
     font-size: 1.4rem;
@@ -607,12 +596,16 @@ body {
         margin-left: -1rem; }
       .keroseen-card .keroseen-card-actions .keroseen-card-action-item:hover, .keroseen-card .keroseen-card-actions .keroseen-card-action-item:focus {
         background-color: rgba(255, 0, 0, 0.1); }
-  .keroseen-card.keroseen-card-co-planar .keroseen-card-container {
-    padding: 0 1rem 0 0; }
-  .keroseen-card.keroseen-card-co-planar .keroseen-card-figure {
-    font-size: 0;
-    margin: 0 0 1rem 0;
-    padding: 0 0 0 1rem; }
+  .keroseen-card.keroseen-card-co-planar {
+    display: flex; }
+    .keroseen-card.keroseen-card-co-planar .keroseen-card-container {
+      flex-basis: 66%;
+      padding: 0 1rem 0 0; }
+    .keroseen-card.keroseen-card-co-planar .keroseen-card-figure {
+      flex-basis: 34%;
+      font-size: 0;
+      margin: 0 0 1rem 0;
+      padding: 0 0 0 1rem; }
 
 .has-keroseen-top-nav {
   padding-top: 6rem; }

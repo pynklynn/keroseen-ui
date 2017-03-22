@@ -18,11 +18,6 @@ Features ready for consumption as either functions or mixins:
 * Side navigation bar - scrolls independently, mobile-first responsiveness
 * Utility function and mixins
 
-### Roadmap leading to first release
-
-* Responsive functionality
-    * Mobile-first card
-
 ## Things that are not planned as features
 
 The following items are not planned as features and likely will not be implemented as they are outside of the scope of this project:
