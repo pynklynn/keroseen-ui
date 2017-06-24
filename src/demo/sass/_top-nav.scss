@@ -2,10 +2,18 @@
 
 .has-keroseen-top-nav {
   @include has-keroseen-top-nav();
+
+  // added for demo to demonstrate the page scrolling.
+  main {
+    background: linear-gradient(to bottom, #fff 0%,#ddd 100%);
+    height: 2000px;
+  }
 }
 
 .keroseen-top-nav {
   @include keroseen-top-nav();
+  background-color: #fff;
+  z-index: 900;
 
   &.fixed {
     @include keroseen-top-nav-fixed();

@@ -612,6 +612,9 @@ body {
   @media (min-width: 544px) {
     .has-keroseen-top-nav {
       padding-top: 6.5rem; } }
+  .has-keroseen-top-nav main {
+    background: linear-gradient(to bottom, #fff 0%, #ddd 100%);
+    height: 2000px; }
 
 .keroseen-top-nav {
   box-shadow: 0 0.2rem 0.5rem 0 rgba(0, 0, 0, 0.25);
@@ -621,7 +624,9 @@ body {
   padding: 1rem;
   position: fixed;
   right: 0;
-  top: 0; }
+  top: 0;
+  background-color: #fff;
+  z-index: 900; }
   @media (min-width: 544px) {
     .keroseen-top-nav {
       flex-direction: row;
