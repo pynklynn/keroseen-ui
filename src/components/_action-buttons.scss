@@ -1,0 +1,58 @@
+//
+// @author Will Steinmetz
+// @file action-buttons.scss
+// licence MIT
+// copyright: 2017
+// This file defines the action button styles available in Keroseen.
+//
+
+$keroseen-action-button-icon-font-size: 24px;
+$keroseen-action-button-icon: keroseen-px-to-rem($keroseen-action-button-icon-font-size / 2);
+$keroseen-action-button-size-small: 40px;
+$keroseen-action-button-size: 56px;
+
+@mixin keroseen-action-button {
+  border-radius: 50%;
+  box-shadow: 0 keroseen-px-to-rem(2px) keroseen-px-to-rem(5px) 0 rgba(0, 0, 0, .25);
+  display: inline-block;
+  height: keroseen-px-to-rem($keroseen-action-button-size-small);
+  line-height: 1;
+  position: relative;
+  text-decoration: none;
+  width: keroseen-px-to-rem($keroseen-action-button-size-small);
+
+  @media (min-width: $keroseen-screen-sm) {
+    height: keroseen-px-to-rem($keroseen-action-button-size);
+    width: keroseen-px-to-rem($keroseen-action-button-size);
+  }
+}
+
+@mixin keroseen-action-button-icon {
+  font-size: keroseen-px-to-rem($keroseen-action-button-icon-font-size);
+  left: calc(50% - #{$keroseen-action-button-icon});
+  position: absolute;
+  text-align: center;
+  top: calc(50% - #{$keroseen-action-button-icon});
+  width: keroseen-px-to-rem($keroseen-action-button-icon-font-size);
+
+  @media (min-width: $keroseen-screen-sm) {
+    left: calc(50% - #{$keroseen-action-button-icon});
+    top: calc(50% - #{$keroseen-action-button-icon});
+  }
+}
+
+@mixin keroseen-action-button-mini {
+  @media (min-width: $keroseen-screen-sm) {
+    height: keroseen-px-to-rem($keroseen-action-button-size-small);
+    width: keroseen-px-to-rem($keroseen-action-button-size-small);
+  }
+}
+
+@mixin keroseen-action-button-mini-icon {
+  @media (min-width: $keroseen-screen-sm) {
+    font-size: keroseen-px-to-rem($keroseen-action-button-icon-font-size);
+    left: calc(50% - #{$keroseen-action-button-icon});
+    top: calc(50% - #{$keroseen-action-button-icon});
+    width: keroseen-px-to-rem($keroseen-action-button-icon-font-size);
+  }
+}

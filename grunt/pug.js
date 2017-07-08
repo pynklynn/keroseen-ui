@@ -17,7 +17,8 @@ module.exports = {
       'demo/grid.html': 'src/demo/pug/grid.pug',
       'demo/cards.html': 'src/demo/pug/cards.pug',
       'demo/top-nav.html': 'src/demo/pug/top-nav.pug',
-      'demo/side-nav.html': 'src/demo/pug/side-nav.pug'
+      'demo/side-nav.html': 'src/demo/pug/side-nav.pug',
+      'demo/action-buttons.html': 'src/demo/pug/action-buttons.pug'
     }
   }
 };

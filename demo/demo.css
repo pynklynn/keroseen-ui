@@ -607,6 +607,41 @@ body {
       margin: 0 0 1rem 0;
       padding: 0 0 0 1rem; }
 
+.keroseen-action-button {
+  border-radius: 50%;
+  box-shadow: 0 0.2rem 0.5rem 0 rgba(0, 0, 0, 0.25);
+  display: inline-block;
+  height: 4rem;
+  line-height: 1;
+  position: relative;
+  text-decoration: none;
+  width: 4rem; }
+  @media (min-width: 544px) {
+    .keroseen-action-button {
+      height: 5.6rem;
+      width: 5.6rem; } }
+  .keroseen-action-button .keroseen-action-button-icon {
+    font-size: 2.4rem;
+    left: calc(50% - 1.2rem);
+    position: absolute;
+    text-align: center;
+    top: calc(50% - 1.2rem);
+    width: 2.4rem; }
+    @media (min-width: 544px) {
+      .keroseen-action-button .keroseen-action-button-icon {
+        left: calc(50% - 1.2rem);
+        top: calc(50% - 1.2rem); } }
+  @media (min-width: 544px) {
+    .keroseen-action-button.mini {
+      height: 4rem;
+      width: 4rem; } }
+  @media (min-width: 544px) {
+    .keroseen-action-button.mini .keroseen-action-button-icon {
+      font-size: 2.4rem;
+      left: calc(50% - 1.2rem);
+      top: calc(50% - 1.2rem);
+      width: 2.4rem; } }
+
 .has-keroseen-top-nav {
   padding-top: 6rem; }
   @media (min-width: 544px) {
