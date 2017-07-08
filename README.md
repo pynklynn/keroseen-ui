@@ -17,7 +17,7 @@ Features ready for consumption as either functions or mixins:
 * Top navigation bar either fixed or scrolling with page - mobile-first responsiveness
 * Side navigation bar - scrolls independently, mobile-first responsiveness
 * Utility function and mixins
-* Action buttons
+* Action buttons - including containers for them at the bottom of the screen
 
 ## Things that are not planned as features
 
