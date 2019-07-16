@@ -4,7 +4,14 @@
   "description": "Sass framework of minimal includes to use as a blueprint to create a custom UI without the bloat",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass --output-style compact --source-map true src/demo/sass/main.scss demo/demo.css",
+    "sass:dev": "node-sass --output-style nested --source-map true --watch src/demo/sass/main.scss demo/demo.css",
+    "build": "concurrently \"npm run sass\" \"npm run pug\" \"npm run imagemin\"",
+    "build:dev": "concurrently \"npm run sass\" \"npm run sass:dev\" \"npm run pug:dev\" \"npm run imagemin\"",
+    "pug": "pug -o demo/ src/demo/pug",
+    "pug:dev": "pug -o demo/ -w -P src/demo/pug",
+    "imagemin": "imagemin src/demo/images --out-dir demo/images"
   },
   "repository": {
     "type": "git",
@@ -23,14 +30,11 @@
   },
   "homepage": "https://github.com/willsteinmetz/keroseen-ui#readme",
   "devDependencies": {
-    "grunt": "^1.0.1",
-    "grunt-contrib-clean": "^1.0.0",
-    "grunt-contrib-imagemin": "^1.0.1",
-    "grunt-contrib-pug": "^1.0.0",
-    "grunt-contrib-watch": "^1.0.0",
-    "grunt-sass": "^2.0.0",
-    "load-grunt-config": "^0.19.2",
+    "concurrently": "^4.1.1",
+    "imagemin-cli": "^5.0.0",
+    "node-sass": "^4.12.0",
     "node-static": "^0.7.9",
-    "time-grunt": "^1.4.0"
-  }
+    "pug-cli": "^1.0.0-alpha6"
+  },
+  "dependencies": {}
 }
