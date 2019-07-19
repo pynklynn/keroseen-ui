@@ -268,9 +268,6 @@ body { font-size: 1.6rem; margin: 0; }
 
 @media screen and (min-width: 1200px) { .container { max-width: 1200px; } }
 
-/** basic card: <card> <card-title></card-title> <card-content></card-content> <card-actions> <card-action></card-action> </card-actions> </card> */
-/** stacked plane card: <card> <card-figure> <card-image></card-image> <card-title></card-title> </card-figure> <card-sub-title></card-sub-title> <card-content></card-content> <card-actions> <card-action></card-action> </card-actions> </card> OR <card> <card-figure> <card-image></card-image> </card-figure> <card-title></card-title> <card-sub-title></card-sub-title> <card-content></card-content> <card-actions> <card-action></card-action> </card-actions> </card> */
-/** co-planar card <card> <card-container> <card-title></card-title> <card-content></card-content> <card-footer></card-footer> </card-container> <card-image></card-image> </card> */
 .keroseen-card { border-radius: 0.2rem; box-shadow: 0 0.2rem 0.5rem 0 rgba(0, 0, 0, 0.25); margin-bottom: 1rem; padding: 1.5rem 1.5rem 0.5rem; }
 
 .keroseen-card .keroseen-card-content { font-size: 1.4rem; padding-bottom: 1rem; }
