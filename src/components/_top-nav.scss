@@ -1,12 +1,11 @@
+// @license
+// Copyright (c) 2017-2019 Pynk Lynn, LLC
+// This code may only be used under the MIT style license found at
+// https://github.com/pynklynn/keroseen-ui/blob/master/LICENSE
 //
-// @author Will Steinmetz
-// @file _top-nav.scss
-// licence MIT
-// copyright: 2017
 // This file defines the top nav styles available in Keroseen.
 //
 // @required shared-nav
-//
 
 @mixin has-keroseen-top-nav() {
   @include keroseen-nav-has-nav();
