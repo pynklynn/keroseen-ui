@@ -5,13 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "node-sass --output-style compact --source-map true src/demo/sass/main.scss demo/demo.css",
-    "sass:dev": "node-sass --output-style nested --source-map true --watch src/demo/sass/main.scss demo/demo.css",
+    "sass": "node-sass --output-style compact --source-map true src/demo/sass/main.scss docs/demo.css",
+    "sass:dev": "node-sass --output-style nested --source-map true --watch src/demo/sass/main.scss docs/demo.css",
     "build": "concurrently \"npm run sass\" \"npm run pug\" \"npm run imagemin\"",
     "build:dev": "concurrently \"npm run sass\" \"npm run sass:dev\" \"npm run pug:dev\" \"npm run imagemin\"",
-    "pug": "pug -o demo/ src/demo/pug",
-    "pug:dev": "pug -o demo/ -w -P src/demo/pug",
-    "imagemin": "imagemin src/demo/images --out-dir demo/images"
+    "pug": "pug -o docs/ src/demo/pug",
+    "pug:dev": "pug -o docs/ -w -P src/demo/pug",
+    "imagemin": "imagemin src/docs/images --out-dir docs/images"
   },
   "repository": {
     "type": "git",
