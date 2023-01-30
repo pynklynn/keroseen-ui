@@ -8,7 +8,7 @@ var static = require('node-static'),
   http = require('http');
 
 // config
-var file = new static.Server('./demo/', {
+var file = new static.Server('./docs/', {
   cache: 3600,
   gzip: true
 });
