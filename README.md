@@ -30,12 +30,19 @@ The following items are not planned as features and likely will not be implement
 
 ### Also, the following will never be implemented as part of the framework
 
-* Internet Explorer support - if a developer needs support for IE, they will need to add it in their customizations
 * Support for languages other than Sass
 
 ## Browser support
 
-This framework is tested in and designed for evergreen browsers including Chrome (and by extension Opera), Edge, Firefox, and Safari. The framework targets the most recent and one older version of each (excluding Safari which is the most recent version only as Apple takes between 12 and 24 months for releases). There is no support built in for Internet Explorer but many, if not most, styles will still function properly. The framework may work in other browsers that are not tested.
+This framework is tested in and designed for evergreen browsers including Chrome (and by extension Opera), Edge, Firefox, and Safari. The framework targets the most recent and one older version of each (excluding Safari which is the most recent version only as Apple takes between 12 and 24 months for releases).
+
+## Future
+
+Planning for big changes is underway.
+Some potential updates include:
+
+* Use of CSS custom properties
+* Flexible native web components that make use of the styles
 
 ## Credits/Attribution
 
