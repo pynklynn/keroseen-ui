@@ -1,18 +1,11 @@
 {
-  "name": "keroseen-ui",
-  "version": "0.2.2",
+  "name": "keroseen-ui-mono",
+  "version": "1.0.0-alpha.0",
   "description": "Sass framework of minimal includes to use as a blueprint to create a custom UI without the bloat",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass --output-style compact --source-map true src/demo/sass/main.scss docs/demo.css",
-    "sass:dev": "sass --output-style nested --source-map true --watch src/demo/sass/main.scss docs/demo.css",
-    "build": "concurrently \"npm:sass\" \"npm:pug\" \"npm:imagemin\"",
-    "build:dev": "concurrently \"npm:sass\" \"npm:sass:dev\" \"npm:pug:dev\" \"npm:imagemin\"",
-    "pug": "pug -o docs/ src/demo/pug",
-    "pug:dev": "pug -o docs/ -w -P src/demo/pug",
-    "imagemin": "imagemin src/demo/images --out-dir docs/images",
-    "start": "node server.js"
+    "build": "npm run build --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present"
   },
   "repository": {
     "type": "git",
@@ -30,11 +23,9 @@
     "url": "https://github.com/pynklynn/keroseen-ui/issues"
   },
   "homepage": "https://github.com/pynklynn/keroseen-ui#readme",
-  "devDependencies": {
-    "concurrently": "^7.6.0",
-    "imagemin-cli": "^6.0.0",
-    "node-static": "^0.7.11",
-    "pug-cli": "^1.0.0-alpha6",
-    "sass": "^1.57.1"
-  }
+  "private": true,
+  "workspaces": [
+    "packages/components",
+    "packages/docs"
+  ]
 }
