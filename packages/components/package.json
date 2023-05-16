@@ -5,8 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass --style compressed demo/sass/main.scss docs/demo.css",
-    "sass:dev": "sass --watch demo/sass/main.scss docs/demo.css",
+    "sass:old": "sass --style compressed demo/sass/main.scss docs/demo.css",
+    "sass:dev:old": "sass --watch demo/sass/main.scss docs/demo.css",
+    "build:scss": "sass --style compressed tests/scss/index.scss tests/dist/index.css",
+    "build:scss:dev": "sass tests/scss/index.scss tests/dist/index.css",
+    "watch:scss": "sass --watch tests/scss/index.scss tests/dist/index.css",
     "build": "concurrently \"npm:sass\" \"npm:pug\" \"npm:imagemin\"",
     "build:dev": "concurrently \"npm:sass\" \"npm:sass:dev\" \"npm:pug:dev\" \"npm:imagemin\"",
     "pug": "pug -o docs/ demo/pug",
@@ -35,6 +38,6 @@
     "imagemin-cli": "^6.0.0",
     "node-static": "^0.7.11",
     "pug-cli": "^1.0.0-alpha6",
-    "sass": "^1.57.1"
+    "sass": "^1.62.1"
   }
 }
