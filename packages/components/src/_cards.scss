@@ -1,5 +1,5 @@
 // @license
-// Copyright (c) 2017-2019 Pynk Lynn, LLC
+// Copyright (c) 2017-2023 Pynk Lynn, LLC
 // This code may only be used under the MIT style license found at
 // https://github.com/pynklynn/keroseen-ui/blob/master/LICENSE
 //
@@ -51,9 +51,13 @@
 //   <card-image></card-image>
 // </card>
 
+@use './defaults' as kdefaults;
+@use './utilities' as kutils;
+
 @mixin keroseen-card() {
-  border-radius: keroseen-px-to-rem(2px);
-  box-shadow: 0 keroseen-px-to-rem(2px) keroseen-px-to-rem(5px) 0 rgba(0, 0, 0, .25);
+  --_keroseen-border-radius: var(--keroseen-border-radius, #{kdefault.$keroseen-border-radius});
+  border-radius: var(--_keroseen-border-radius);
+  // box-shadow: 0 keroseen-px-to-rem(2px) keroseen-px-to-rem(5px) 0 rgba(0, 0, 0, .25);
   margin-bottom: keroseen-px-to-rem(10px);
   padding: keroseen-px-to-rem(15px) keroseen-px-to-rem(15px) keroseen-px-to-rem(5px);
 }
