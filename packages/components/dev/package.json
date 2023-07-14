@@ -1,0 +1,19 @@
+{
+  "name": "keroseen-ui-dev",
+  "version": "1.0.0",
+  "description": "Keroseen dev app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite",
+    "build": "tsc && sass && vite build"
+  },
+  "author": "",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "sass": "^1.63.4",
+    "typescript": "^5.1.3",
+    "vite": "^4.3.9"
+  }
+}

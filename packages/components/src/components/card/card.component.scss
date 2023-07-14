@@ -1,0 +1,7 @@
+@use '../../styles/cards' as kcards;
+
+$ks-namespace: 'ks' !default;
+
+#{$ks-namespace}-card {
+  @include kcards.keroseen-card;
+}
